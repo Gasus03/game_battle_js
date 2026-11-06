@@ -180,17 +180,17 @@ function batalla() {
   console.log(
     `El ganador de la batalla pokemon es: ${winner.nombre.toUpperCase()}`,
   );
-  console.log("----------------------------------------");
-  console.log(`Estado Final de todos los personajes`);
+  console.log("-------------------------------------------");
+  console.log(`Estado Final de todos los personajes: `);
   for (let personaje of Nombre_Personajes) {
     let estado_vida = "";
     if (personaje.Personaje_vivo()) {
-      estado_vida = `Vivo: (Vida: ${personaje.vida})`;
+      estado_vida = `Vivo: (Vida:${personaje.vida})`;
     } else {
       estado_vida = "Derrotado";
     }
-    console.log(`${personaje.nombre} ${estado_vida}`);
-  }
+    console.log(`${personaje.nombre}: ${estado_vida}`);
+  } 
 }
 
 batalla();
