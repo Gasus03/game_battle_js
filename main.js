@@ -154,7 +154,7 @@ function batalla() {
         objetivos_Aleatorios.recibir_Ataque(dano);
 
         console.log(
-          `${atacantes.nombre} esta listo para atacar a ${objetivos_Aleatorios.nombre} usando [${Habilidad_Usada}]`,
+          `${atacantes.nombre} esta listo para atacar a ${objetivos_Aleatorios.nombre} usando ${Habilidad_Usada}`,
         );
         console.log(`El ataque le causo ${dano} de daño.`);
         console.log(
